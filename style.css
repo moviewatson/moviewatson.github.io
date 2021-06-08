@@ -1,4 +1,39 @@
-		body{
+/*common Css*/
+		.rotate {
+    		-moz-transition: all .5s linear;
+    		-webkit-transition: all .5s linear;
+  	  		transition: all .5s linear;
+		}
+
+		.rotate.down {
+    		-moz-transform:rotate(90deg);
+    		-webkit-transform:rotate(90deg);
+    		transform:rotate(90deg);
+		}
+
+		#other-movies a{
+			text-decoration: none;
+		}
+		#other-movies a:link {
+ 			 color: #FF0000;
+		}
+		#other-movies a:visited {
+  			color: #00FF00;
+		}
+		#other-movies a: hover{
+			color: #FF00FF;
+		}
+		#other-movies a: active{
+			color: #0000FF;
+		}
+		.pointer{
+			cursor: pointer;
+		}
+
+
+/* CSS for larger screens  */
+@media screen and (min-width: 501px){
+			body{
 			background-color: #0C090A  ;
 			color: white;
 			letter-spacing: .04em;
@@ -139,28 +174,11 @@
 			width: 1000px;
 		}
 
-/*Chevron rotating*/
-		.rotate {
-    		-moz-transition: all .5s linear;
-    		-webkit-transition: all .5s linear;
-  	  		transition: all .5s linear;
-		}
-
-		.rotate.down {
-    		-moz-transform:rotate(90deg);
-    		-webkit-transform:rotate(90deg);
-    		transform:rotate(90deg);
-		}
-
 		#other-movies h3{
 			font-size: 1.5em;
 			color:  #FDD017;
 			padding: 0 0 0 40px;
 			display: inline;
-		}
-		
-		.pointer{
-			cursor: pointer;
 		}
 
 		#other-movies li{
@@ -179,22 +197,147 @@
 			box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.5);
 		}
 
-		#other-movies a{
-			text-decoration: none;
-		}
-		#other-movies a:link {
- 			 color: #FF0000;
-		}
-		#other-movies a:visited {
-  			color: #00FF00;
-		}
-		#other-movies a: hover{
-			color: #FF00FF;
-		}
-		#other-movies a: active{
-			color: #0000FF;
-		}
-
 		#other-movies li p{
 			display: none;
 		}
+
+}
+@media screen and (max-width: 500px){
+		body{
+			background-color: #0C090A  ;
+			color: white;
+			letter-spacing: .04em;
+			line-height: 21px;
+			font-size: 17px;
+			position:  relative;
+		   }
+
+		   #main-wrapper{
+		   	position:  relative;
+		   }
+
+		   #banner{
+		   	margin: 30px auto;
+		   	width: ;
+
+		   }
+
+		   img{
+		   	width: 100%;
+		   }
+
+		   #main-content{
+
+		   }
+
+		   h2{
+		   	position: absolute;
+		   	top: 90px;
+		   	font-size: 25px;
+			opacity: 80%;
+			color: #B6B6B4;
+		   }
+
+		   #intro p{
+		   	text-align: justify;
+		   	padding: 0 10px 0 10px;
+		   	font-size: 1.1em;
+		   }
+
+		   /*FOR knives out*/
+
+		   #latest-movie{
+			text-align: justify;
+			overflow: hidden;
+			width: 90%;
+			max-height: 250px;
+			margin: 10px auto ;
+			border: 1px solid #726E6D;
+			border-radius: 7px;
+
+			/*Set Transitions up*/
+
+			-webkit-transition: max-height 0.8s;
+			-moz-transition: max-height 0.8s;
+			transition: max-height 0.8s;
+			box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.5);
+		}
+
+		#latest-movie.open{
+			max-height: 1460px;
+
+			/*Set Transitions up*/
+
+			-webkit-transition: max-height 0.8s;
+			-moz-transition: max-height 0.8;
+			transition: max-height 0.8s;
+			box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.5);
+		}
+
+		#latest-movie h3{
+			font-size: 23px;
+		    padding-left: 150px;
+		    margin: 12px auto;
+			column-span: all
+		}
+
+		#latest-movie p{
+			padding: 0 13px 0 13px;
+			font-size: 0.83em;
+		}
+
+		#show-more{
+			background-color: #0C090A;
+			color: white;
+			font-family: calibri;
+		/*	font-size: 0.83em;*/
+			display: block;
+			width: 130px;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding: 10px;
+			text-align: center;
+			border: 1px solid lightgrey ;
+			border-radius: 10px;
+			margin:0 auto;
+			cursor: pointer;
+		}
+
+		#show-more:hover{
+			background-color: #2C3539;
+		}
+
+		nav li{
+			list-style-type: none;
+			text-align: center;
+			padding: 5px;
+			margin: 2px;
+		}
+
+	/*Other Movies*/
+
+		#other-movies li{
+			text-align: justify;
+			width: 90%;
+			max-height: 1860px;
+			list-style-type: none;
+			border: 1px solid white;
+			border-radius: 10px;
+			padding:  15px;
+			margin: 0 0 10px 0;
+			box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.5);
+		}
+
+		#other-movies h3{
+			font-size: 1.3em;
+			color:  #FDD017;
+			padding: 0 0 0 100px;
+			display: inline;
+		}
+
+		#other-movies li p{
+			font-size: 0.85em;
+			display: none;
+		}
+
+}
