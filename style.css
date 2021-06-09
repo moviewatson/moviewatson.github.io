@@ -319,7 +319,7 @@
 		#other-movies li{
 			text-align: justify;
 			width: 90%;
-			max-height: 2000px;
+			max-height: 2500px;
 			list-style-type: none;
 			border: 1px solid white;
 			border-radius: 10px;
@@ -336,7 +336,7 @@
 		}
 
 		#other-movies li p{
-			font-size: 0.85em;
+			font-size: 0.8em;
 			display: none;
 		}
 
