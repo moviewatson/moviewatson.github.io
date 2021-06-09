@@ -319,7 +319,7 @@
 		#other-movies li{
 			text-align: justify;
 			width: 90%;
-			max-height: 2500px;
+			max-height: auto;
 			list-style-type: none;
 			border: 1px solid white;
 			border-radius: 10px;
