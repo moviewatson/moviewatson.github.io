@@ -1,0 +1,5 @@
+Make each css and javascript separate for html files. Do some research on the cost benefits before doing so.
+See why the image for the first link is not being generated.
+Add some title or something for the homepage
+Learn how to take files from git and then make changes on local machine which are relfected in github repository
+Last: try to take the name pawandevelops or pawanvivek.github.io on which all projects would be there.
