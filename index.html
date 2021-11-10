@@ -167,7 +167,7 @@
                 console.log(`divInnerHtmlArray[htmlArrayIndexNumber].className: ${divInnerHtmlArray[htmlArrayIndexNumber].className}`)
                 var imageTag = document.createElement("img");
                 imageTag.src = divInnerHtmlArray[htmlArrayIndexNumber].imageSource;
-                imageTag.setAttribute("alt", ${divInnerHtmlArray[htmlArrayIndexNumber].imageAltText});
+                imageTag.setAttribute("alt", divInnerHtmlArray[htmlArrayIndexNumber].imageAltText);
 
                 var pOneTag = document.createElement("P");
                 pOneTag.innerText = divInnerHtmlArray[htmlArrayIndexNumber].textParaOne;
