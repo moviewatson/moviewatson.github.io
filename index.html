@@ -123,35 +123,42 @@
 
     <script>
         let divInnerHtmlArray = [{
-            "id": 1,
+            id: 1,
+            "className": "tooltip-inner",
+            "imageSource": "./index-resources/loginForm.jpg",
+            "imageAltText": "Preview picture of the login.html form",
+            "textParaOne": "Consectetur adipiscing elit. Vestibulum vitae augue a mauris consequat porta et non diam. Praesent id volutpat erat.",
+            "textParaTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae augue d volutpat erat."
+        }, {
+            "id": 2,
             "className": "tooltip-inner",
             "imageSource": "./index-resources/cssExplained.jpg",
             "imageAltText": "Preview picture of the page css-explained.html",
             "textParaOne": "This responsive page explains what CSS Selectors their usage. Selectors are useful for front end decoration and targeting of elements.",
             "textParaTwo": "Features: Share button having an OffCanvas which contains Social Media links. Dynamically generated line numbers on left of example codes.  Communicate link (in footer) causes an animated pop-up. A right-bottom fixed Go-up button. Portion of the menu which disappears on scroll-down."
         }, {
-            "id": 2,
+            "id": 3,
             "className": "tooltip-inner",
             "imageSource": "./index-resources/carz.jpg",
             "imageAltText": "Preview picture of the page: carz.html",
             "textParaOne": "CarZ responsive webpage is for any generic car manufacturer.",
             "textParaTwo": "Features: A sticky navbar. Carousel of four pics, with auto slide and click function. A form with front end validation. A Modal - to share social media links."
         }, {
-            "id": 3,
+            "id": 4,
             "className": "tooltip-inner",
             "imageSource": "./index-resources/oraExplained.jpg",
             "imageAltText": "Preview picture of the page: ora-explained.html",
             "textParaOne": "OraExplained's responsive page to demonstrate using Insert Statements in Oracle SQL.",
             "textParaTwo": "Features: Dynamically generated 'accept cookies' popup which appears only when scrolled to the bottom of the page. A Form which whose Submit button is not activated till all all entries are properly filled. Use of Pre-tags to demo SQL statements. And, a screen responsive Navigation-bar and Footer."
         }, {
-            "id": 4,
+            "id": 5,
             "className": "tooltip-inner",
             "imageSource": "./index-resources/dailyFlowers.jpg",
             "imageAltText": "Preview picture of the page: daily-flowers.html",
             "textParaOne": "Daily Flowers responsive website with a simple layout.",
             "textParaTwo": "Features: Accordion to present website info in a novel way. Offer Cards to highlight best or trending orders. A feedback section with customers' comments. A Get in touch form to attend to all queries and needs of the clients. A simple footer."
         }, {
-            "id": 5,
+            "id": 6,
             "className": "tooltip-inner",
             "imageSource": "./index-resources/movieWatson.jpg",
             "imageAltText": "Preview picture of the page: movie-watson.html",
@@ -269,12 +276,13 @@
 
         var siteLinksArray = [
             './css-explained/css-explained.html',
+            './login/login.html',
             './carz/carz.html',
             './ora-explained/ora-explained.html',
             './daily-flowers/daily-flowers.html',
             './movie-watson/movie-watson.html'
         ];
-        var siteLinkTextsArray = ['CssExplained', 'CarZ', 'Ora-Explained', 'Daily Flowers', 'Movie Watson']
+        var siteLinkTextsArray = ['CssExplained', 'Login Form', 'CarZ', 'Ora-Explained', 'Daily Flowers', 'Movie Watson']
 
         // Creating links and boxes inside the 'wrapper' class.
         createBoxDiv(5, siteLinksArray, siteLinkTextsArray);
@@ -293,7 +301,6 @@
             item.addEventListener("mouseout", function(event) {
                 item.classList.remove("hover");
                 item.classList.add("shrink");
-
             });
         });
 
